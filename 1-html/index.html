@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste HTML - Sapient</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure id="menu-icon" label="menu" role="img"> &#9776;
+            </figure>
+
+            <img src="./assets/img/logo.svg" width="100" height="100" alt="Logo da empresa">
+            <figure id="search-icon" aria-label="search" role="img"> &#128269;
+            </figure>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Olá mundo!</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            <a href="#">adipiscing elit</a>, sed diam nonummy
+            nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut
+            wisi enim ad minim</p>
+
+        <video src="./assets/video/video.mp4" controls aria-label="Vídeo de demonstração"></video>
+        <br>
+        <q>LOREM IPSUM DOLOR SIT AMET,
+            CONSECTETUER VOLUTPAT. UT.</q>
+    </main>
+
+    <nav id="menu">
+        <figure class="close-icon" aria-label="close" role="img"> &#10006;
+        <img src="./assets/img/logo.svg"  width="100" height="100" alt="Logo da empresa">
+         </figure>
+
+        <ul>
+            <li><strong>Quem somos</strong></li>
+            <li><strong>Trabalhe conosco</strong></li>
+            <li><strong>Pessoas</strong></li>
+            <li><strong>Cases</strong></li>
+        </ul>
+
+        <aside id="social-medias">
+            <a href="#"><img src="./assets/img/instagram.svg" width="25" height="25" alt="Instagram"></a>
+            <a href="#"><img src="./assets/img/facebook.svg" width="25" height="25" alt="Facebook"></a>
+            <a href="#"><img src="./assets/img/linkedin.svg" width="25" height="25" alt="LinkedIn"></a>
+            <a href="#"><img src="./assets/img/medium.svg" width="25" height="25" alt="Medium"></a>
+        </aside>
+    </nav>
+
+    <article id="research">
+        <img src="./assets/img/logo.svg" width="100" height="100" alt="Logo da empresa">
+        <span class="close-icon" aria-label="close" role="img"> &#10006;
+         </span> 
+             <br>
+        <input type="text" placeholder="Digite o que deseja buscar" aria-label="Campo de busca">
+    </article>
+
+    <section>
+        <h2>Galeria de imagens</h2>
+        <div class="image-gallery">
+            <button aria-label="Imagem anterior">
+                <span class="exchange-icon">&#8592;</span>
+            </button>
+            <img src="./assets/img/imagem-1.png" alt="Imagem 1">
+            <button aria-label="Próxima imagem">
+                <span class="exchange-icon">&#8594;</span>
+            </button>
+        </div>
+
+        <aside class="choice-input">
+            <input type="radio" aria-label="Input de escolha 1">
+            <input type="radio" checked="checked" aria-label="Input de escolha 2">
+            <input type="radio" aria-label="Input de escolha 3">
+        </aside>
+    </section>
+
+    <article id="read-more-about">
+        <details>
+            <summary>LOREM IPSUM DOLOR SIT</summary>
+            <p>Lorem ipsum dolor sit amet, consectetuer
+                erat volutpat. Ut wisi enim ad
+                minim</p>
+        </details>
+    </article>
+
+    <section>
+        <h2>Parceiros</h2>
+        <div class="image-gallery">
+            <button aria-label="Imagem anterior">
+                <span class="exchange-icon">&#8592;</span>
+            </button>
+            <img src="./assets/img/imagem-2.png" alt="Imagem 2">
+            <button aria-label="Próxima imagem">
+                <span class="exchange-icon">&#8594;</span>
+            </button>
+
+            <aside>
+                <p>Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit, sed diam
+                    <br>
+                    <a href="#">Conheça mais</a>
+                </p>
+            </aside>
+
+            <aside class="choice-input">
+                <input type="radio" checked="checked" aria-label="Input de escolha 4">
+                <input type="radio" aria-label="Input de escolha 5">
+                <input type="radio" aria-label="Input de escolha 6">
+                <input type="radio" aria-label="Input de escolha 7">
+            </asidea>
+        </div>
+    </section>
+
+    <h2>Entre em contato</h2>
+
+    <form id="form-fill">
+        <fieldset id="name-area">
+            <label for="name">Nome:</label>
+            <br>
+            <input type="text" id="name">
+        </fieldset>
+
+        <fieldset id="email-area">
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" id="email">
+        </fieldset>
+
+        <fieldset id="phone-area">
+            <label for="phone">Telefone:</label>
+            <br>
+            <input type="tel" id="phone">
+        </fieldset>
+
+        <fieldset id="message-area">
+            <label for="message">Mensagem:</label>
+            <br>
+            <textarea id="message"></textarea>
+        </fieldset>
+
+        <button type="submit">ENVIAR</button>
+    </form>
+
+    <footer>
+        <address>
+            Av. Dr. Figueiredo Mascarenhas, 94<br>
+            Tres Vendas, Pelotas - RS<br>
+            96055-510<br>
+            (53) 3030-3030
+        </address>
+
+        <nav>
+            <a href="#">Vagas</a> <a href="#">Cases</a> <a href="#">Sitemap</a>
+        </nav>
+    </footer>
+
+    </body>
+</html>

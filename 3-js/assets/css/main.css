@@ -235,6 +235,11 @@ body.-overlay .wrapper:before {
   visibility: visible;
 }
 
+.modal-wiki.-active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .modal-wiki img {
   display: block;
   margin: 0 auto;

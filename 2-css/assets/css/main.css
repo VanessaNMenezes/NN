@@ -1,1 +1,571 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+
+* {
+    font-family: "Source Sans Pro";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#wrapper {
+    display: grid;
+    background: #F4F4F4;
+}
+
+#header {
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    padding: 1px;
+    background-color: #ffffff;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    width: 100%;
+    height: 4rem;
+    border: 0.063rem solid #EEEEEE;
+}
+
+.main_title {
+    color: #3C3B3B;
+    text-transform: uppercase;
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 1.438rem;
+    margin-left: 1.75%;
+    padding-right: 1.813%;
+    border-right: 0.063rem solid #EEEEEE;
+    font: bold 0.875rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.175rem;
+}
+
+#header .main_title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.links-container {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 1.438rem;
+    font: normal 0.875rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.263rem;
+    color: #828282;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.links_item {
+    border-right: 0.063rem solid #EEEEEE;
+    padding-right: 1.129%;
+    margin-right: 10px;
+}
+
+.main {
+    grid-row: 1;
+    grid-column: 3;
+    margin-top: 1.438rem;
+    margin-left: 31.935%;
+    border: 0.063rem solid #EEEEEE;
+    padding-left: 1.129%;
+    padding-right: 1.129%;
+    padding-bottom: 1.129%;
+    padding-top: 0.221%;
+}
+
+.container {
+    display: grid;
+    margin-top: 3%;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    grid-row: 1;
+    grid-column: 1 / span 3;
+}
+
+#main {
+    grid-column: 2;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    grid-column: 2;
+    grid-template-columns: repeat(3, 1fr);
+    background: #FFFFFF;
+    border: 0.063rem solid #EEEEEE;
+    margin-bottom: 4.37%;
+    margin-top: 4.37%;
+    margin-left: 7.43%;
+}
+
+.header {
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    background: #FFFFFF;
+    border: 0.063rem solid #EEEEEE;
+    padding-top: 5.625%;
+    padding-left: 4.375%;
+    margin-bottom: 6%;
+}
+
+.secondary_title {
+    font-size: 18px;
+    font-weight: bold;
+    grid-row: 1;
+    font: normal 900 1.75rem/2.875rem Source Sans Pro;
+    letter-spacing: 0.578rem;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    text-transform: none;
+    margin-top: 5px;
+    font-size: 14px;
+    grid-row: 3;
+    margin-top: 2.08%;
+    font: normal 0.875rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.245rem;
+    color: #8E8E8E;
+    text-transform: uppercase;
+}
+
+.meta {
+  display: grid;
+  justify-self: end;
+  grid-template-columns: 1fr; 
+  align-items: end; 
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+.published {
+    margin-right: 0%;
+    grid-column: 1;
+    font-size: 12px;
+    grid-row: 2;
+    font: normal 900 0.875rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.105rem;
+    color: #3C3B3B;
+    text-transform: uppercase;
+    justify-self: end;
+}
+
+.author {
+    margin-left: 55%;
+    grid-column: 1;
+    grid-row: 4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.938%;
+    border-radius: 50%;
+    justify-self: end;
+}
+
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.fa-bars {
+    font-size: 24px;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.post .header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.post .title {
+    font-size: 20px;
+}
+
+.post .meta .published {
+    font-size: 12px;
+}
+
+.post .image-featured img {
+    width: 100%;
+}
+
+.footer {
+    margin-top: 15px;
+}
+
+.button-large:hover {
+    background: #dedddd;
+    color: #ff4400;
+    opacity: 1.5;
+    border: 2px solid #6e6e6e;
+}
+
+#sidebar {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+.mini-posts, .blurb, .actions {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+    font-size: 10px;
+    direction: wrap;
+    width: 25.63%;
+    margin-top: 4.37%;
+}
+
+.mini-post .header2 {
+    font-size: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.header3 {
+    width: 100%;
+}
+
+.tertiary_title {
+    margin-left: 5%;
+    font-size: 10px;
+    width: 18.63%;
+    height: 2.5%;
+    font: bold 0.875rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.21rem;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+.mini-post .image img {
+    max-width: 100%;
+}
+
+.mini-post .published {
+    font-size: 12px;
+}
+
+.posts {
+    display: grid;
+    grid-column: 4;
+    margin-left: 4.37%;
+    width: 25.63%;
+}
+
+.posts span {
+    margin-bottom: 15px;
+}
+
+.blurb {
+    display: grid;
+    left: 8.16%;
+    width: 15.58%;
+    height: 25.77%;
+    margin-top: 4.37%;
+    margin-left: 4.37%;
+}
+
+.blurb .paragraph {
+    text-transform: lowercase;
+    font-size: 12px;
+}
+
+.name {
+    margin-right: 0.208%;
+    color: #8E8E8E;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font: normal 1rem/1.875rem Source Sans Pro;
+    letter-spacing: 0.08rem;
+}
+
+.avatar,
+.sidebar_avatar {
+    border-radius: 50%;
+}
+
+.image_featured {
+    display: grid;
+    justify-content: center;
+    margin-left: 3.12%;
+    margin-bottom: 6%;
+}
+
+.actions {
+    display: grid;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5.69%;
+    margin-left: 2.32%;
+    width: 25.87%;
+    height: 55.88%;
+    background: #FFFFFF;
+    border: 0.063rem solid #EEEEEE;
+    font: bold 0.875rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.245rem;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+.button-large {
+    padding: 40px;
+}
+.disabled-button-large-previous,
+.button-large-next {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 5.69%;
+    margin-left: 15.32%;
+    width: 95.87%;
+    height: 80.88%;
+    background: #FFFFFF;
+    border: 0.063rem solid #EEEEEE;
+    font: bold 0.875rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.245rem;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+.actions-pagination {
+    display: grid;
+    width: 30%;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 9.37%;
+}
+
+.mini-post {
+    margin-left: 4.37%;
+    display: grid;
+    justify-content: end;
+    grid: column-reverse;
+    background: #FFFFFF;
+    border: 0.063rem solid #EEEEEE;
+    margin-bottom: 3.12%;
+}
+
+.image {
+    width: 100%;
+}
+
+.posts-published {
+    font: normal 0.75rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.09rem;
+    color: #808080;
+    text-transform: uppercase;
+}
+
+.about-paragraph {
+    font: normal 400 1rem/1.875rem Source Sans Pro;
+    color: #808080;
+    margin-bottom: 4.37%;
+}
+
+.actions-know-more {
+    display: grid;
+    justify-content: center;
+}
+
+.button {
+    display: grid;
+    width: 110%;
+    height: 18%;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 0.063rem solid #EEEEEE;
+    font: bold 0.875rem/1.25rem Source Sans Pro;
+    letter-spacing: 0.245rem;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  #header {
+      width: 100%;
+      grid-row: 1;
+      grid-column: 1;
+      justify-items: center;
+  }
+
+  #wrapper,
+  #header,
+  .main_title,
+  .links-container {
+      font-size: 12px;
+  }
+
+  .container {
+      grid-template-columns: 1fr;
+      grid-column: 1;
+      grid-row: 2;
+      justify-items: center;
+      justify-content: center; 
+      align-items: center;
+      grid-template-rows: auto;
+  }
+
+  .links-container {
+    display: none;
+  }
+
+  #main {
+      grid-column: 1 / span 4;
+  }
+
+  #sidebar {
+      grid-column: 1 / span 4;
+      grid-row: 3;
+      margin-left: 0;
+  }
+
+  .mini-posts,
+  .grid-container,
+  .posts {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+ .about-paragraph {
+      grid-column: 1;
+      grid-row: 5;
+  }
+
+  .actions-know-more {
+    grid-column: 1;
+    grid-row: 6;
+    margin-right: 75%;
+}
+
+  .header,
+  .meta,
+  .image-featured,
+  .actions,
+  .second_paragraph,
+  .actions-pagination,
+  .mini-posts,
+  .posts,
+  .blurb {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .post {
+      grid-column: 1 / span 4;
+      grid-row: 1;
+      justify-self: center;
+      align-self: center;
+  }
+
+  .button {
+    width: 100%;
+    height: 100%;
+  }   
+}
+
+@media (max-width: 400px) {
+    #header {
+      width: 100%;
+      grid-row: 1;
+      grid-column: 1;
+      justify-items: center;
+    }
+
+    #header .main_title {
+        font-size: 16px;
+      }
+  
+    .container {
+        grid-template-columns: 1fr;
+        grid-column: 1; 
+        grid-row: 1; 
+        max-width: 60%; 
+        padding: 1px; 
+        margin: 0 auto;
+        margin-top: 25%;
+      }
+  
+      .container .paragraph {
+        font-size: 10px; 
+      }
+
+    .secondary_title {
+        font-size: 18px;
+        letter-spacing: 0.1rem;      
+    }
+
+    .actions-pagination {
+        grid-template-columns: 1fr; 
+        justify-items: center; 
+        margin-left: 0; 
+    }
+
+    .actions-pagination .disabled-button-large-previous,
+    .actions-pagination .button-large-next {
+        width: 85.87%; 
+        height: 80.88%;
+        margin-bottom: 5.69%;
+    }
+
+    #main {
+      grid-column: 1; 
+    }
+  
+    #sidebar {
+      grid-column: 1;
+      grid-row: 2;
+      margin-left: 0;
+    }
+  
+    .mini-posts,
+    .grid-container,
+    .posts,
+    .blurb {
+      grid-template-columns: 1fr;
+    }
+  
+    .blurb {
+      grid-row: 3; 
+    }
+  
+    .header,
+    .meta,
+    .image-featured,
+    .actions,
+    .second_paragraph,
+    .actions-pagination,
+    .mini-posts,
+    .posts,
+    .blurb {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .post {
+      grid-column: 1; 
+      grid-row: 1;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .button {
+        width: 160%;
+    }  
+  }
