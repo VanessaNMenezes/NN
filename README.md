@@ -15,6 +15,7 @@ Neste teste, foram desenvolvidos arquivos separados para avaliar as compreensõe
 ## 🔷 COMO O TESTE FOI REALIZADO?
 
 🔹 Clonando o projeto original
+
 🔹 Sigando as instruções do README.md contido em cada uma das pastas
 🔹 Criando o projeto em um respositório pessoal
 🔹 Mudando o remote do repositório clonado para o meu repositório pessoal
